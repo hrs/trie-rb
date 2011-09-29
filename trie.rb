@@ -71,13 +71,3 @@ class Trie
     curr.next[:end]
   end
 end
-
-t = Trie.new "", "x", "xxx", "yydgasfasf"
-t.remove 'x'
-
-# IO.readlines('/usr/share/dict/words').each do |w|
-#   puts w
-#   t.add w
-# end
-
-t.each { |x| puts "[#{x}]" }
